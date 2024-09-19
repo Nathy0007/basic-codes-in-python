@@ -1,3 +1,22 @@
+#Media do aluno  com loop.
+contador = 0
+while contador <= 10:
+   nome = input('Digite o nome do aluno:')
+   n1 = int(input('Nota do aluno:'))
+   n2 = int(input('segunda nota '))
+   media = (n1 + n2) / 2
+   if media >= 7:
+    print('parabens sua media foi: {}'.format(media))
+   else:
+    print('Reprovado')
+   continua = input('Deseja continuar? [SIM/NÃO]').lower()
+   if continua == 'sim':
+      continue
+   else:
+     print('Programa Finalizado')
+     break
+contador += 1
+
 #cauculos sobre lucros.
 faturamento=2000.85
 custo=900
